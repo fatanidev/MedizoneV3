@@ -6,13 +6,447 @@
     android:layout_height="match_parent"
     tools:context="com.example.fatani.medizone_v2.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="815dp"
+        android:layout_height="349dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/darkerblue_rectangle" />
+
+    <ImageView
+        android:id="@+id/imgPatientFirst"
+        android:layout_width="317dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/portait" />
+
     <TextView
+        android:id="@+id/textView17"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="SUMMARY"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgPatientFirst"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="32"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgPatientFirst"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="72"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/txtAge" />
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="162"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txtWeight"
+        app:layout_constraintTop_toTopOf="@+id/txtWeight" />
+
+    <TextView
+        android:id="@+id/txtBloodType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="O"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtHeight"
+        app:layout_constraintStart_toEndOf="@+id/txtHeight" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="27dp"
+        android:layout_height="14dp"
+        android:text="Age"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/imgPatientFirst"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="33dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="48dp"
+        android:text="Weight"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeight" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="41dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="52dp"
+        android:text="Height"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeight" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="41dp"
+        android:layout_height="13dp"
+        android:layout_marginStart="40dp"
+        android:text="Blood"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintStart_toEndOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/txtFname"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Lorem Ipsum"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imgPatientFirst"
+        app:layout_constraintTop_toBottomOf="@+id/imgPatientFirst" />
+
+    <TextView
+        android:id="@+id/txtEthLoc"
+        android:layout_width="264dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="32dp"
+        android:text="British - Ealing"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFname" />
+
+    <ImageButton
+        android:id="@+id/btnLastVisit"
+        android:layout_width="281dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/blue_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="281dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/btnLastVisit"
+        app:layout_constraintTop_toBottomOf="@+id/btnLastVisit"
+        app:srcCompat="@drawable/blue_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="281dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/blue_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/btnLastVisit"
+        app:layout_constraintTop_toTopOf="@+id/btnLastVisit"
+        app:srcCompat="@drawable/calendar_icon" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/stethoscopes_icon" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/heart_icon" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="12dp"
+        android:text="LAST VISIT"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnLastVisit"
+        app:layout_constraintTop_toTopOf="@+id/btnLastVisit" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="76dp"
+        android:text="10/10/2017"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/btnLastVisit"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="12dp"
+        android:text="SUFFERING DISEASE"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/txtSuffering"
+        android:layout_width="191dp"
+        android:layout_height="19dp"
+        android:text="Lorem Ipsum"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/TextViewSuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="12dp"
+        android:text="INSUFFICIENCY"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/txtInsufficiency"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@+id/TextViewSuff"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewSuff" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="150dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/orange_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="150dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:srcCompat="@drawable/green_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="150dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:srcCompat="@drawable/green_rectangle" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/thermo" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/textView11"
+        app:srcCompat="@drawable/heartrate_icon" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="70dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11"
+        app:srcCompat="@drawable/bloodpressure_icon" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Temperature"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="°C"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:text="40.5"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="Heart Rate"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="86"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="BPM"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Blood Pressure"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="34dp"
+        android:text="86"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mmHg"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
 
 </android.support.constraint.ConstraintLayout>
