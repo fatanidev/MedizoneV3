@@ -8,9 +8,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="195dp"
-        android:layout_height="284dp"
-        android:layout_marginStart="16dp"
+        android:layout_width="139dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ahmed" />
@@ -20,7 +21,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="16dp"
         android:text="24"
         android:textColor="#000"
         android:textSize="40sp"
@@ -88,21 +88,22 @@
 
     <com.jjoe64.graphview.GraphView
         android:id="@+id/graph3"
-        android:layout_width="480dp"
+        android:layout_width="297dp"
         android:layout_height="135dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="272dp"
-        android:layout_height="85dp"
+        android:layout_width="298dp"
+        android:layout_height="65dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/darkerblue_rectangle"
         android:text="Enroll Patient"
         android:textColor="#fff"
-        app:layout_constraintStart_toStartOf="@+id/textView41"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+        app:layout_constraintStart_toStartOf="@+id/graph3"
+        app:layout_constraintTop_toBottomOf="@+id/graph3" />
 
     <TextView
         android:id="@+id/textView44"
