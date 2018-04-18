@@ -10,8 +10,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="229dp"
         android:layout_height="64dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="12dp"
         android:background="#2d70c5"
         android:fontFamily="monospace"
         android:text="Login"
@@ -22,34 +21,34 @@
 
     <ImageView
         android:id="@+id/imageView22"
-        android:layout_width="196dp"
-        android:layout_height="182dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="120dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="168dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="214dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="44dp"
         android:fontFamily="monospace"
         android:lineSpacingExtra="8sp"
         android:text="Medizone"
         android:textColor="#fff"
-        android:textSize="75sp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="337dp"
-        android:layout_height="496dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="224dp"
+        android:layout_height="281dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginTop="44dp"
         android:background="#fff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
