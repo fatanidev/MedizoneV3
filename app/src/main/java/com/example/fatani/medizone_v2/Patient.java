@@ -15,7 +15,7 @@ public class Patient {
     String familyLocation;
     String bloodType;
 
-    public Patient(String fName, String lName, String dob, String ethnicity, String location, String phoneNo, String familyContact, String familyLocation, String bloodType, String height, String weight, String sufferingDisease, String insufficiency) {
+    public Patient(String fName, String lName, String dob, String ethnicity, String location, String phoneNo, String familyContact, String familyLocation, String bloodType, String height, String weight, String lastSeenBy, String dateLastSeen) {
         this.fName = fName;
         this.lName = lName;
         this.dob = dob;
@@ -27,15 +27,14 @@ public class Patient {
         this.bloodType = bloodType;
         this.height = height;
         this.weight = weight;
-        this.sufferingDisease = sufferingDisease;
-        this.insufficiency = insufficiency;
+        this.lastSeenBy = lastSeenBy;
+        this.dateLastSeen = dateLastSeen;
     }
 
     String height;
     String weight;
-    String sufferingDisease;
-    String insufficiency;
-
+    String lastSeenBy;
+    String dateLastSeen;
 
 
 
@@ -127,20 +126,20 @@ public class Patient {
         this.weight = weight;
     }
 
-    public String getSufferingDisease() {
-        return sufferingDisease;
+    public String getLastSeenBy() {
+        return lastSeenBy;
     }
 
-    public void setSufferingDisease(String sufferingDisease) {
-        this.sufferingDisease = sufferingDisease;
+    public void setLastSeenBy(String lastSeenBy) {
+        this.lastSeenBy = lastSeenBy;
     }
 
-    public String getInsufficiency() {
-        return insufficiency;
+    public String getDateLastSeen() {
+        return dateLastSeen;
     }
 
-    public void setInsufficiency(String insufficiency) {
-        this.insufficiency = insufficiency;
+    public void setDateLastSeen(String dateLastSeen) {
+        this.dateLastSeen = dateLastSeen;
     }
 
 

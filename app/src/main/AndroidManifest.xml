@@ -8,6 +8,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -28,7 +29,10 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".Camera"></activity>
+        <activity android:name=".Test">
+
+        </activity>
+
         <activity android:name=".Navigation"></activity>
     </application>
 

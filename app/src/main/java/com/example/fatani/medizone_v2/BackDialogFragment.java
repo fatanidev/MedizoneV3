@@ -24,14 +24,11 @@ public class BackDialogFragment extends DialogFragment {
     public void setTitle(String title) {
         this.title = title;
     }
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
-        // Use the Builder class for convenient dialog construction
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(title);
         builder.setMessage(message);
@@ -51,7 +48,6 @@ public class BackDialogFragment extends DialogFragment {
             }
         });
 
-        // Create the AlertDialog object and return it
         return builder.create();
     }
 

@@ -28,4 +28,6 @@ dependencies {
     implementation files('libs/GraphView-4.2.1.jar')
     implementation files('libs/GenAsync.jar')
     implementation files('libs/KairosSDK.jar')
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
 }

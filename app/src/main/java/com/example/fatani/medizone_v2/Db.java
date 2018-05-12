@@ -15,8 +15,8 @@ public class Db extends AppCompatActivity {
 
     public static void populateDB(){
         //patients
-        dataPatients.put(1, new Patient("Ahmed", "Tunisi", "24", "Asian","Croyden", "07123456789", "07987654321", "Croyden", "B+", "154", "62", "Lower Respiratory Infections", "Chronic Venous "));
-        dataPatients.put(2, new Patient("Akber", "Ali", "23", "Asian","Hayes", "07123456789", "07987654321", "Hayes", "A", "169", "80", "Type 2 Diabetes", "Chronic Venous "));
+        dataPatients.put(1, new Patient("Samantha", "Blue", "21", "British","Ealing", "07123456789", "07987654321", "Leeds", "B+", "154", "62", "Dr Ahmed", "10/07/2018 "));
+        dataPatients.put(2, new Patient("Akber", "Ali", "23", "Asian","Hayes", "07123456789", "07987654321", "Hayes", "A", "169", "80", "Dr Ahmed", "14/07/2018 "));
         dataPatients.put(3, new Patient("Daniel", "Omoregie", "24", "African","Barking", "07123456789", "07987654321", "Barking", "A", "185", "90", "Alzheimers", "Chronic Venous "));
         dataPatients.put(4, new Patient("Mason", "Nosam", "35", "Asian","Chiswick", "07123456789", "07987654321", "White City", "B", "185", "84", "Coronary Artery", "Chronic Venous "));
         //doctors

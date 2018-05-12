@@ -23,28 +23,12 @@ public class BackPatientDialogFragment extends DialogFragment {
         this.title = title;
     }
 
-
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    public void setDoctorId(Integer doctorId) {
-        this.doctorId = doctorId;
-    }
-
-
-
-
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-
-
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(title);
         builder.setMessage(message);
         System.out.println(getActivity());
-
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             public void onClick(DialogInterface dialog, int id) {
@@ -60,7 +44,6 @@ public class BackPatientDialogFragment extends DialogFragment {
                 dialog.dismiss();
             }
         });
-
         return builder.create();
     }
 

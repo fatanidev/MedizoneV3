@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Medizone_v2</string>
+    <string name="emotionDetec">Emotion Detection</string>
 </resources>
